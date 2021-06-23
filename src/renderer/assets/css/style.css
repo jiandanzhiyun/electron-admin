@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+a {
+    color: #3c8dbc;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #367fa9;
+}
+
+.el-menu .fa {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+}
+
+.el-menu .fa:not(.is-children) {
+    font-size: 14px;
+}
+
+
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s ease-in-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+/*flex布局  */
+.flex-container {
+    display: -webkit-box;
+    display: flex;
+}
+
+.flex-dir-rr {
+    /*主轴为横轴 顺序与文档流相反*/
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.flex-dir-c {
+    /*主轴为纵轴 顺序与文档流相同*/
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+.flex-dir-cr {
+    /*主轴为纵轴 顺序与文档流相反*/
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+.flex-wrap-w {
+    /*允许子项目折行显示 顺序与文档流相同*/
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-wrap-wr {
+    /*允许子项目折行显示 顺序与文档流相反*/
+    -ms-flex-wrap: wrap-reverse;
+    -webkit-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-jus-e {
+    /*子项目在主轴方向上 尾部对齐*/
+    -moz-box-pack: end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-jus-c {
+    /*子项目在主轴方向上 居中对齐*/
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flex-jus-st {
+    -moz-box-pack: start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    justify-content: start;
+}
+
+.flex-jus-sa {
+    /*子项目在主轴方向上 均匀分布 首尾子项到父容器的距离是子项间距的一半*/
+    -moz-box-pack: space-around;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.flex-jus-sp {
+    /*子项目在主轴方向上 均匀分布 首尾子项到父容器的距离为0*/
+    -moz-box-pack: space-between;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flex-align-s {
+    /*子项目在侧轴上 头部对齐（宽高不被拉伸）*/
+    -moz-box-align: start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.flex-align-e {
+    /*子项目在侧轴上 尾部对齐（宽高不被拉伸）*/
+    -moz-box-align: end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-align-c {
+    /*子项目在侧轴上 居中对齐（宽高不被拉伸）*/
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.flex-align-b {
+    /*子项目在侧轴上 首行文字的基线对齐（宽高不被拉伸）*/
+    -moz-box-align: baseline;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    align-items: baseline;
+}
+
+.flex-one {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+
+.flex-two {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    -moz-box-flex: 2;
+    -webkit-box-flex: 2;
+    flex: 2;
+}
+
+.flex-three {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    -moz-box-flex: 3;
+    -webkit-box-flex: 3;
+    flex: 3;
+}
+pre{
+    font-family:'Microsoft YaHei';   
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    line-height: 35px;
+}
+
+.font-size-14,h3{
+    font-size: 14px;
+}
+.font-size-15,h2{
+    font-size: 15px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.font-weight{
+    font-weight: bold;
+}
+.font-weight-nomal{
+    font-weight: normal;
+}
+.color02a7f0{
+    color: #02a7f0;
+}
+.colorf59a23{
+color: #f59a23;
+}
+.color70b603{
+color: #70b603;
+}
